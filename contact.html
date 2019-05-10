@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
+    <title>Me contacter</title>
+</head>
+<body>
+    <div class="wrappercontact">
+        <div class="headeritem">
+            <header class="header">
+                <h1 class="headertext3">Contactez moi</h1>   
+                <a class="accueilbutton" href="/index.html"> Accueil </a>
+            </header>
+        </div>
+        <div class="form">
+            <form action="https://formspree.io/hoeljamault@hotmail.fr" method="POST">
+                <div class="formarea">
+                    <input class="texte" type="email" 
+                    onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Votre mail...'" placeholder="Votre mail..." name="mail">
+                </div>
+                <div class="formarea">
+                    <textarea class="textemessage" type="text" wrap="soft"
+                    onfocus="this.placeholder = ''"
+                    onblur="this.placeholder = 'Votre message...'" placeholder="Votre message..."
+                    name="message"></textarea>
+                </div>
+                <input class="sendbutton" type="submit" value="Envoyer">
+            </form>
+        </div>
+        <footer>
+            <a class="footerlink" href="https://www.linkedin.com/in/ho%C3%ABl-jamault-81a867182/">Mon profil LinkedIn</a>
+            <a class="footerlink" href="/documents/CV Hoel Jamault.pdf">Télécharger mon CV en format PDF</a>
+            <p class="copyright">©Hoël Jamault Site créé en 2019 sous HTML5, Javascript et CSS3</p>
+        </footer>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

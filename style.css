@@ -1,0 +1,431 @@
+* {
+box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*html, body {
+    overflow: hidden;
+}*/
+
+body {
+    margin: 0;
+    padding: 0;
+    transition: transform 0.3s;
+    animation: fadein .3s;
+}
+
+body.accueil {
+    overflow: hidden;
+}
+
+@keyframes fadein {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.wrapper {
+    min-height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-rows: 2fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "header header"
+        "button1 button2"
+        "button3 button3";
+}
+
+.wrappercontact {
+    padding-left: 100px;
+    padding-right: 100px;
+    height: 100vh;
+    width: 100%;
+}
+
+.wrappercontact header.header {
+    position: relative;
+}
+
+.wrappercomp header.header {
+    position: relative;
+}
+
+.wrappercomp {
+    display: grid;
+    padding-left: 100px;
+    padding-right: 100px;
+    min-height: 100vh;
+    width: 100%;
+    grid-template-areas: "header header"
+                         "leftlist rightlist"
+                         "footer footer";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto 20%;
+}
+
+.wrappercomp header {
+grid-area: header;
+}
+
+.wrappercomp footer {
+    grid-area: footer;
+    margin-top: 10px;
+}
+
+.leftlist {
+    height: auto;
+    color: #C60101;
+    font-size: 15px;
+    font-weight: 100;
+    grid-area: leftlist; 
+    text-align: left;
+    border-right: 1px solid #C60101;
+    margin-top: 70px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+
+.rightlist {
+    height: 100%;
+    color: #C60101;
+    font-size: 15px;
+    font-weight: 100;
+    grid-area: rightlist;
+    text-align: left;
+    margin-left: 100px;
+    margin-top: 70px;
+}
+
+li {
+    padding: 5px;
+}
+
+.comptext {
+    grid-area: rightlist;
+}
+
+@media (max-width: 600px) {
+    .wrapper {
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+            "header header"
+            "button1 button1"
+            "button2 button2"
+            "button3 button3";
+    }
+}
+
+.header {
+    height: 110px;
+    background-color: white;
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.headeraccueil {
+    background-color: white;
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.headeritem {
+    grid-area: header;
+}
+
+.headertext {
+    text-align: center;
+    margin: 0;
+    color: #C60101;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.headertext2 {
+    text-align: center;
+    margin: 10px;
+    color: #C60101;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.headertext2::before {
+
+    height: 1px;
+    display: block;
+    content: "";
+    width: 25%;
+    background-color: #C60101;
+    margin: auto;
+    margin-bottom: 10px;
+
+}
+
+.headertext3 {
+    text-align: center;
+    margin-top: 80px;
+    color: #C60101;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.headertext3::after {
+    height: 1px;
+    display: block;
+    content: "";
+    width: 25%;
+    background-color: #C60101;
+    margin: auto;
+}
+
+.button {
+    transition: background-color 0.5s, border 0.5s;
+    border: 2px solid white;
+
+}
+
+.button:hover {
+    background-color: white;
+    border: 2px solid #C60101;
+}
+
+.button a {
+    transition: color 0.5s;
+}
+
+.button:hover a {
+    color: #C60101;
+}
+
+.button1 {
+    text-align: center;
+    display: table;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    background-color: #C60101;
+    grid-area: button1;
+    border-right: 2px solid white;
+}
+
+.button2 {
+    text-align: center;
+    display: table;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    background-color: #C60101;
+    grid-area: button2;
+    border-left: 2px solid white;
+}
+
+.button3 {
+    text-align: center;
+    display: table;
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+    background-color: #C60101;
+    grid-area: button3;
+    border-top: 4px solid white;
+}
+
+.accueilbutton {
+    padding: 5px;
+    color: #C60101;
+    border: 1px solid #C60101;
+    border-radius: 2px;
+    font-size: 20px;
+    font-weight: 400;
+    position: absolute;
+    right: 0;
+}
+
+.formarea {
+    display: flex;
+    flex-direction: row;
+}
+
+::placeholder {
+    color: #C60101;
+    font-size: 12px;
+    font-weight: 300;
+    opacity: 1;
+}
+
+.texte {
+    width: 30%;
+    margin-top: 50px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-width: 1px;
+    border-bottom-color: #C60101;
+}
+
+.textemessage {
+    resize: none;
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    margin-top: 30px;
+    border-width: 1px;
+    border-color: #C60101;
+}
+
+.sendbutton {
+    width: 100%;
+    padding: 12px;
+    color: #C60101;
+    font-weight: 400;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #C60101;
+    background-color: white;
+}
+
+.bigbutton {
+    display: table-cell;
+    vertical-align: middle;
+    color: white;
+    height: 100%;
+}
+
+.expbuttons {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.expbutton, .expbutton2 {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.expbutton {
+    border-right: 1px solid #C60101;
+}
+
+/* .expbuttons {
+    margin-top: 30px;
+    margin-left: 11%;
+    position: sticky;
+    
+}
+
+.expbutton {
+    padding-right: 100px;
+    margin-right: 100px;
+    margin-left: none;
+    border-right: 1px solid #C60101;
+    border-top: none;
+    border-left: none;
+    border-bottom: none;
+    color: #C60101;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+}
+
+.expbutton2 {
+    color: #C60101;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+    border: none;
+} */
+
+.exptext {
+    color: #C60101;
+    font-weight: 100;
+}
+
+.expimg {
+display: inline;
+max-width: 25%;
+border-radius: 30px;
+margin-left: 15%;
+border: 1px solid #C60101;
+}
+
+.formationitem {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.formationtitle {
+    color: #C60101;
+    font-size: 22px;
+}
+
+.description {
+    color: #C60101;
+    font-weight: 100;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #C60101;
+}
+
+.date {
+    color: #C60101;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+#un , #deux , #trois {
+    display: none;
+    margin-top: 60px;
+    font-size: 20px;
+}
+#un:target , #deux:target , #trois:target {
+    display: block;
+}
+
+body.fade-right {
+    transform: translateX(100%);
+}
+
+body.fade-left {
+    transform: translateX(-100%);
+}
+
+body.fade-top {
+    transform: translateY(-100%);
+}
+
+.copyright {
+    font-weight: 100;
+    font-size: 12px;
+    color:#C60101;
+}
+
+.footerlink {
+    display: inline-block;
+    font-weight: 100;
+    font-size: 12px;
+    color:#C60101;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    margin-right: 30px;
+}
+
+label > a {
+    display: block;
+    width: 50%;
+    padding-bottom: 10px;
+    margin: auto;
+    color: #C60101;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+input:checked + label > a {
+    display: block;
+    border-bottom: 1px solid #C60101;
+}
