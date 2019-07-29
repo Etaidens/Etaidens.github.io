@@ -80,7 +80,7 @@ grid-area: header;
     height: auto;
     color: #C60101;
     font-size: 20px;
-    font-weight: 100;
+    font-weight: 120;
     grid-area: leftlist; 
     text-align: left;
     border-right: 1px solid #C60101;
