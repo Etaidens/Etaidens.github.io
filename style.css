@@ -400,15 +400,15 @@ body.fade-top {
 }
 
 .copyright {
-    font-weight: 100;
-    font-size: 12px;
+    font-weight: 120;
+    font-size: 15px;
     color:#C60101;
 }
 
 .footerlink {
     display: inline-block;
-    font-weight: 100;
-    font-size: 12px;
+    font-weight: 120;
+    font-size: 15px;
     color:#C60101;
     margin-top: 20px;
     margin-bottom: 10px;
