@@ -213,6 +213,7 @@ li {
     background-color: #C60101;
     grid-area: button1;
     border-right: 2px solid white;
+    height: 100%;
 }
 
 .button2 {
@@ -224,6 +225,7 @@ li {
     background-color: #C60101;
     grid-area: button2;
     border-left: 2px solid white;
+    height: 100%;
 }
 
 .button3 {
@@ -235,6 +237,7 @@ li {
     background-color: #C60101;
     grid-area: button3;
     border-top: 4px solid white;
+    height: 100%;
 }
 
 .accueilbutton {
