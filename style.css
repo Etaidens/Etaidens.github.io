@@ -79,7 +79,7 @@ grid-area: header;
 .leftlist {
     height: auto;
     color: #C60101;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 100;
     grid-area: leftlist; 
     text-align: left;
@@ -92,7 +92,7 @@ grid-area: header;
 .rightlist {
     height: 100%;
     color: #C60101;
-    font-size: 15px;
+    font-size: 20px;
     font-weight: 100;
     grid-area: rightlist;
     text-align: left;
